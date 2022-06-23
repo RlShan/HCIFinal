@@ -1,0 +1,43 @@
+newmtl Exterior_Cube_White1
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl Sofa_Legs
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sofa_Legs_Base_Color.png
+bump Sofa_Legs_Height.png -bm 1
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl Sofa_Material
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd -s 0.333333 0.333333 Fabric_Yellow_Base_Color.png
+bump -s 0.333333 0.333333 Fabric_Yellow_Height.png -bm 0.213675
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl Sofa_Material_2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric_Red_Base_Color.png
+bump Fabric_Red_Height.png -bm 0.213675
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl Sofa_Material_5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Leather_Black_Base_Color.png
+bump Leather_White_Height.png -bm 0.213675
+Ni 1.00
+Ks 0.50 0.50 0.50
