@@ -6,8 +6,8 @@ using TMPro;
 public class Menu : MonoBehaviour
 {
     [SerializeField] private RectTransform items,line;
-    [SerializeField] private Material[] colors;
-    [SerializeField] private TMP_Dropdown colorDropDown;
+    /*[SerializeField] private Material[] colors;
+    [SerializeField] private TMP_Dropdown colorDropDown;*/
     void Start()
     {
     }
@@ -20,14 +20,11 @@ public class Menu : MonoBehaviour
     {
         LeanTween.value(items.anchorMin.x, 0, 1f).setOnUpdate(OnValueMinChange);
         LeanTween.value(items.anchorMax.x, 1, 1f).setOnUpdate(OnValueMaxChange);
-        Debug.Log("OnClick");
     }
     public void OnTables()
     {
         LeanTween.value(items.anchorMin.x, -1, 1f).setOnUpdate(OnValueMinChange);
         LeanTween.value(items.anchorMax.x, 0, 1f).setOnUpdate(OnValueMaxChange);
-        Debug.Log("OnClick");
-
     }
     public void OnSofa()
     {
@@ -52,11 +49,11 @@ public class Menu : MonoBehaviour
         line.anchorMax = new Vector2(val, 0.75f);
 
     }
-    public void OnColorChange()
+   /* public void OnColorChange()
     {
         for(int i = 0; i < items.transform.childCount - 1; i++)
         {
             items.transform.GetChild(i).GetComponent<MeshRenderer>().material = colors[colorDropDown.value];
         }
-    }
+    }*/
 }

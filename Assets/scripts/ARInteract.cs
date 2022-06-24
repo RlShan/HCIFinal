@@ -7,6 +7,8 @@ public class ARInteract : MonoBehaviour
 {
     public GameObject myItem,camPanel,menuPanel;
     public ARRaycastManager raycastManager;
+    private GameObject currObj;
+
 
     public void ItemSelect(GameObject item)
     {
@@ -18,6 +20,11 @@ public class ARInteract : MonoBehaviour
     {
         menuPanel.SetActive(true);
         camPanel.SetActive(false);
+        if (currObj != null)
+        {
+            Destroy(currObj);
+            currObj = null;
+        }
     }
     public void Touch()
     {
@@ -25,7 +32,7 @@ public class ARInteract : MonoBehaviour
         raycastManager.Raycast(Input.GetTouch(0).position, touches, UnityEngine.XR.ARSubsystems.TrackableType.Planes);
         if (touches.Count > 0)
         {
-            GameObject.Instantiate(myItem, touches[0].pose.position, touches[0].pose.rotation);
+            currObj=GameObject.Instantiate(myItem, touches[0].pose.position, touches[0].pose.rotation);
         }
         /* if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
          {
@@ -36,5 +43,16 @@ public class ARInteract : MonoBehaviour
                  GameObject.Instantiate(myItem, touches[0].pose.position, touches[0].pose.rotation);
              }
          }*/
+    }
+    public void Remove()
+    {
+        if (currObj != null)
+        {
+            Destroy(currObj);
+            currObj = null;
+            Debug.Log("Remove");
+
+        }
+
     }
 }
