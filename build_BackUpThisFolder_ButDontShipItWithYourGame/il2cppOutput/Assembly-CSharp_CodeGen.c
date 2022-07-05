@@ -2128,28 +2128,28 @@ extern void ARInteract_ItemSelect_m499766FE6AD1A0023639CEF8B30DC039A2637568 (voi
 extern void ARInteract_OnClickBack_m96C4C8EF151C6C0C3570DDDEF0D509B292090F9B (void);
 // 0x00000422 System.Void ARInteract::Touch()
 extern void ARInteract_Touch_m5778CFA8BAA29BAC020CD81A0F8DB4038FC73BFA (void);
-// 0x00000423 System.Void ARInteract::.ctor()
+// 0x00000423 System.Void ARInteract::Remove()
+extern void ARInteract_Remove_mAB9724D390BF45D17C2331A82DBB8C74319C8B3C (void);
+// 0x00000424 System.Void ARInteract::.ctor()
 extern void ARInteract__ctor_mE59719352D461AF7E9A852E200CE32C3249248BF (void);
-// 0x00000424 System.Void Menu::Start()
+// 0x00000425 System.Void Menu::Start()
 extern void Menu_Start_mC49986718939F87924A1391044721CAC6E28919D (void);
-// 0x00000425 System.Void Menu::Update()
+// 0x00000426 System.Void Menu::Update()
 extern void Menu_Update_m664984862D794DB3E17B79AFC35D12A9ED961B5D (void);
-// 0x00000426 System.Void Menu::OnChairs()
+// 0x00000427 System.Void Menu::OnChairs()
 extern void Menu_OnChairs_m020F901609303C926E9F528145100B9AF477313D (void);
-// 0x00000427 System.Void Menu::OnTables()
+// 0x00000428 System.Void Menu::OnTables()
 extern void Menu_OnTables_m902BFDF3F24947E4CC55B65710407C22B2F92050 (void);
-// 0x00000428 System.Void Menu::OnSofa()
+// 0x00000429 System.Void Menu::OnSofa()
 extern void Menu_OnSofa_mAA6B5B5FB74E2DCF752F6514BBF75E6261AEA303 (void);
-// 0x00000429 System.Void Menu::OnValueMinChange(System.Single)
+// 0x0000042A System.Void Menu::OnValueMinChange(System.Single)
 extern void Menu_OnValueMinChange_m88D41705639367EF71EF46ADD94EBDD7AD7329AC (void);
-// 0x0000042A System.Void Menu::OnValueMaxChange(System.Single)
+// 0x0000042B System.Void Menu::OnValueMaxChange(System.Single)
 extern void Menu_OnValueMaxChange_mA0EB65A0D36C85589B4E56036CDDD42B92FF9E25 (void);
-// 0x0000042B System.Void Menu::ShiftLine(System.Single)
+// 0x0000042C System.Void Menu::ShiftLine(System.Single)
 extern void Menu_ShiftLine_m3421328E532C60F14EC17EC46A51721FB02BE3B0 (void);
-// 0x0000042C System.Void Menu::OnLineChange(System.Single)
+// 0x0000042D System.Void Menu::OnLineChange(System.Single)
 extern void Menu_OnLineChange_m00359A143B3D918FBA34142C67DECE63EC7B791F (void);
-// 0x0000042D System.Void Menu::OnColorChange()
-extern void Menu_OnColorChange_mB08D15D41570AC687480A2FA2508ADF4798AB8C3 (void);
 // 0x0000042E System.Void Menu::.ctor()
 extern void Menu__ctor_mBEF2B96BC9E3D64E020EBE40FEF9CF25E6C3ED00 (void);
 // 0x0000042F System.Void DentedPixel.LeanDummy::.ctor()
@@ -3384,6 +3384,7 @@ static Il2CppMethodPointer s_methodPointers[1156] =
 	ARInteract_ItemSelect_m499766FE6AD1A0023639CEF8B30DC039A2637568,
 	ARInteract_OnClickBack_m96C4C8EF151C6C0C3570DDDEF0D509B292090F9B,
 	ARInteract_Touch_m5778CFA8BAA29BAC020CD81A0F8DB4038FC73BFA,
+	ARInteract_Remove_mAB9724D390BF45D17C2331A82DBB8C74319C8B3C,
 	ARInteract__ctor_mE59719352D461AF7E9A852E200CE32C3249248BF,
 	Menu_Start_mC49986718939F87924A1391044721CAC6E28919D,
 	Menu_Update_m664984862D794DB3E17B79AFC35D12A9ED961B5D,
@@ -3394,7 +3395,6 @@ static Il2CppMethodPointer s_methodPointers[1156] =
 	Menu_OnValueMaxChange_mA0EB65A0D36C85589B4E56036CDDD42B92FF9E25,
 	Menu_ShiftLine_m3421328E532C60F14EC17EC46A51721FB02BE3B0,
 	Menu_OnLineChange_m00359A143B3D918FBA34142C67DECE63EC7B791F,
-	Menu_OnColorChange_mB08D15D41570AC687480A2FA2508ADF4798AB8C3,
 	Menu__ctor_mBEF2B96BC9E3D64E020EBE40FEF9CF25E6C3ED00,
 	LeanDummy__ctor_mAD97A9FAAAF771BEC38CA22F2CBA2DBA31E609CC,
 	PathBezier_OnEnable_mAC0020AD7B5CC064E51D9A9F0DA289FA78C047A4,
@@ -4549,11 +4549,11 @@ static const int32_t s_InvokerIndices[1156] =
 	4441,
 	4441,
 	4441,
-	3628,
-	3628,
-	3628,
-	3628,
 	4441,
+	3628,
+	3628,
+	3628,
+	3628,
 	4441,
 	4441,
 	4441,

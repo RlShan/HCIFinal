@@ -53611,6 +53611,8 @@ struct ARInteract_t0FAD0A825675E66096EBADB16BAD6F6C7637B406  : public MonoBehavi
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___menuPanel_6;
 	// UnityEngine.XR.ARFoundation.ARRaycastManager ARInteract::raycastManager
 	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___raycastManager_7;
+	// UnityEngine.GameObject ARInteract::currObj
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___currObj_8;
 };
 
 // UnityEngine.XR.ARFoundation.ARMeshManager
@@ -54203,10 +54205,6 @@ struct Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05  : public MonoBehaviour_t5
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___items_4;
 	// UnityEngine.RectTransform Menu::line
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___line_5;
-	// UnityEngine.Material[] Menu::colors
-	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ___colors_6;
-	// TMPro.TMP_Dropdown Menu::colorDropDown
-	TMP_Dropdown_t73B37BFDA0D005451C7B750938AFB1748E5EA504* ___colorDropDown_7;
 };
 
 // UnityEngine.UIElements.MinMaxSlider
